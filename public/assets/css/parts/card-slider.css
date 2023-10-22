@@ -1,0 +1,111 @@
+.slider {
+    background-image: linear-gradient(to bottom, #436ab3, #32bcad, #84c98b);
+    width: 100%;
+    padding-bottom: 12px;
+    height: 550px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .slider {
+      height: calc(100vh - 130px);
+    }
+  }
+
+  .slider .header {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .slider .header {
+      font-size: 30px !important;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .slider .slide-container {
+    max-width: 1120px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .slider .slide-container {
+      padding: 0;
+    }
+  }
+
+  .slider .slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  .slider .card {
+    border-radius: 25px;
+    background-color: #fff;
+    width: 400px !important;
+    margin: 11% 30%;
+  }
+
+  .slider .image-content,
+  .slider .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+
+  .slider .image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+
+
+  .slider .card-image {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 10px;
+  }
+
+  .slider .card-image .card-img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .slider .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .slider .description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+
+  .slider .button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: var(--buttons);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .slider .button:hover {
+    background: #265df2;
+  }

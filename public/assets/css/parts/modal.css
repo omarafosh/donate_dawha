@@ -1,0 +1,86 @@
+   #modal {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+
+    #modal .close-modal {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 6px 20px;
+    }
+
+    #modal .close-modal span {
+        background-color: #a2a2a2;
+        border-radius: 50%;
+        padding: 6px 16px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #modal .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        width: 100%;
+
+    }
+
+    #modal .data .header {
+        color: #e00570;
+    }
+
+    #modal .options {
+        display: flex;
+        justify-content: center;
+        column-gap: 16px;
+    }
+
+    #modal .options label {
+        padding: 8px 15px;
+        background-color: #436ab3;
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    #modal .data .description {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    #modal input {
+        width: 75%;
+        height: 40px;
+        padding: 0px 10px;
+        border-radius: 6px;
+        text-align: center;
+        font-family: "Cairo", sans-serif;
+        font-size: 20px;
+    }
+
+    #modal .mony {
+        color: #e00570;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #modal .donate {
+        font-family: "Cairo", sans-serif;
+        border: none;
+        font-size: 16px;
+        color: #fff;
+        padding: 8px 23px;
+        background-color: #e00570;
+        border-radius: 6px;
+        margin: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        top: 82%;
+        left: 22%;
+    }

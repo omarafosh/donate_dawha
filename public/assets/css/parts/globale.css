@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    transition: all 0.4s ease;
+    scroll-behavior: smooth;
+  }
+  
+  /* ===== Colours ===== */
+  :root {
+    --body-color: #e4e9f7;
+    --nav-color: #4070f4;
+    --side-nav: #010718;
+    --text-color: #fff;
+    --search-bar: #f2f2f2;
+    --search-text: #010718;
+    --buttons:#e00570;
+    --card-height:484px;
+    --card-width:330px;
+    --card-color:#f9f7f7;
+    --card-radius:15px;
+    --font-size:14px;
+    --section-height:650px;
+    --card-slider-height:371px;
+    --card-slider-width:280px;
+    --card-color:#f9f7f7;
+  }
+  
+  body {
+    color: #1a202c;
+    background-color: #e2e8f0; 
+    font-family: 'Cairo', sans-serif;   
+    width: 100%;
+ line-height: 1.42857143;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  ul{
+    list-style-type: none;
+  }
+
+  .container{
+    margin-left: auto;;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  @media (min-width: 768px) {  
+     .container{
+      width:750px;
+    } 
+  }
+  
+  @media (min-width: 992px) {    
+    .container{
+      width:970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {  
+    .container{
+      width:1170px;
+    } 
+  }
+
+  /* Framwork mini  */
+.rounded-24 {
+    border-radius: 24px !important;
+}
+.rounded-16 {
+  border-radius: 16px !important;
+}
+.txet-center{
+  text-align: center;
+}
+/* --------------------------- */
+.section {
+  height: var(--section-height);
+  background-color: var(--nav-color);
+}
+/* ----------------------------- */
+.card{
+  height: var(--card-height);
+  width: var(--card-width);
+  background-color: var(--card-color);
+  border-radius: var(--card-radius);
+
+}
+.card-center{
+position: fixed;
+top: 50%;
+right: 25%;
+transform: translate(-50%, -50%);
+}
+/* --------------------------- */
+.slider-card{
+height: var(--card-slider-height);
+width: var(--card-slider-width);
+background-color: var(--card-color);
+border-color: #E6E6E6;
+}
+.slider-button{
+width: 56px;
+height: 56px;
+position: absolute;
+display: block !important;
+border: 1px solid #2D2D2D !important;
+background: white !important;
+}
+/* End Framwork */

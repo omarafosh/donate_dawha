@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    transition: all 0.4s ease;
+    scroll-behavior: smooth;
+  }
+  
+  /* ===== Colours ===== */
+  :root {
+    --body-color: #e4e9f7;
+    --nav-color: #4070f4;
+    --side-nav: #010718;
+    --text-color: #fff;
+    --search-bar: #f2f2f2;
+    --search-text: #010718;
+    --buttons:#e00570;
+  }
+  
+  body {
+    color: #1a202c;
+    background-color: #e2e8f0; 
+    font-family: 'Cairo', sans-serif;   
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  ul{
+    list-style-type: none;
+  }
+
+  .container{
+    margin-left: auto;;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  @media (min-width: 768px) {  
+     .container{
+      width:750px;
+    } 
+  }
+  
+  @media (min-width: 992px) {    
+    .container{
+      width:970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {  
+    .container{
+      width:1170px;
+    } 
+  }
