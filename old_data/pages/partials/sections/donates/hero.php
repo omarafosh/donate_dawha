@@ -1,6 +1,7 @@
 <div class="container">
     <div class="hero-section">
         <div class="content">
+            <img src="<?php echo ASSETS_PATH . DS . 'imgs' . DS . 'hero_mosque.jpg' ?>" alt="">
             <h1>عَمّر مسجدًا..تصنع أثراً</h1>
             <p>كل تبرع ب 342 ريال قطري<br>
                 تساعد فرد في أداء صلاته في مسجد حول العالم</p>
@@ -13,45 +14,7 @@
 
     </div>
 </div>
-<?php include($partials . 'modal_payment_mosque.php'); ?>
-<script>
-    const modalButtons = document.querySelectorAll("#btn_mosque");
-    const modals = document.querySelectorAll("#modal-mosque");
-    modalButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            modals.forEach(modal => {
-                modal.style.display = "none";
-            });
-            const modalId = button.getAttribute("data-modal");
-            const modal = document.getElementById(modalId);
-            modal.style.display = "block";
-        });
-    });
 
-    const closeButtons = document.querySelectorAll(".close-modal");
-    closeButtons.forEach(closeButton => {
-        closeButton.addEventListener("click", () => {
-            const modal = closeButton.parentElement.parentElement;
-            modal.style.display = "none";
-        });
-    });
-    const cancel = document.querySelectorAll("#cancel");
-    cancel.forEach(closeButton => {
-        cancel.addEventListener("click", () => {
-            const modal = closeButton.parentElement.parentElement;
-            modal.style.display = "none";
-        });
-    });
-
-
-    window.addEventListener("click", event => {
-        if (event.target.classList.contains("modal")) {
-            event.target.style.display = "none";
-        }
-    });
-
-    account_person();
-</script>
 
 <style>
     .hero {

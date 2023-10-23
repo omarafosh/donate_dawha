@@ -45,7 +45,7 @@ function findByID($id, $table)
 }
 function findByField($field, $data, $table)
 {
-    $sql = "SELECT * FROM {$table}  where   {$field}='{$data}'";
+    $sql = "SELECT * FROM {$table} where {$field}={$data}";
     $conn = $GLOBALS['conn'];
     $result = $conn->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     return $result;

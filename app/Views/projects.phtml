@@ -12,27 +12,144 @@
 </head>
 
 <body>
-
+    <?php
+    $type = $_GET['type'];
+    $projects = findByField('type', $type, 'project_type');
+    ?>
 
     <nav>
         <?php include($config['COMPONENT_PATH'] . DS . 'NavbarComponent.php') ?>
     </nav>
 
-    <div class="section">
+    <div class="projects section">
+        <?php foreach ($projects as $key => $project) {
+        ?>
+            <img class="projects-hero" src="<?= $project['hero'] ?>" alt="">
+            <div class="projects-content">
+                <h1 class="projects-header"><?= $project['header'] ?></h1>
+                <p class="projects-description"><?= $project['description'] ?></p>
+                <button class="projects-button" data-modal="modal-projects">تبرع سريع</button>
+            </div>
+            <img class="projects-logo" src="" alt="">
+
+    </div>
+    <div class="counters section">
         <div class="container">
-        
+            <div class="projects-base">
+                <h1 class="projects-heading"><?= $project['header'] ?></h1>
+                <p class="projects-subject">
+                    <?= $project['paragraph'] ?>
+                </p>
+            </div>
+            <div class="projects-notes">
+                <h3 class="projects-text-main">كل تبرع ب <span class="projects-text-mony"><?= $project['donate_single'] ?></span> ريال قطري</h3>
+                <h1 class="projects-text-second"> <?= $project['description'] ?></h1>
+            </div>
+            <h1 class="projects-donate-heading">أثر المتبرعين</h1>
+            <div class="projects-donate-counter">
+
+                <div class="projects-donate-right">
+
+                    <img class="projects-counter-img" src="assets/imgs/counters.png" alt="">
+                    <div class="projects-count">
+                        <span>12836</span>
+                    </div>
+                    <p class="projects-persons">عدد المشاريع التي تم تنفيذها</p>
+                </div>
+                <div class="projects-donate-left">
+
+                    <img class="projects-counter-img" src="assets/imgs/counters.png" alt="">
+                    <div class="projects-count">
+                        <span>2574155</span>
+                    </div>
+                    <p class="projects-persons">عدد الاشخاص الذين تم مساعدتهم</p>
+
+                </div>
+            </div>
         </div>
     </div>
-    <div class="section">
-        <div class="container">
+    <div class="post">
+
+        <div class="post-text">
+            <div class="post-content">
+                <p class="post-header">بناء مسجد .. دعم للمسلمين في المناطق النائية</p>
+                <p class="post-description">مرور السنوات وتضاعف أعداد المسلمين، أصبحت الكثير من المساجد
+                    لا تلبي حاجات الأعداد المتزايدة من المصلين، خاصة في الأماكن النائية
+                    وفي الدول غير المسلمة
+                    التي يشكل فيها المسلمون أقلية. لذلك هي دعوة نوجهها لك في
+                    &quot;قطر الخيرية&quot; للمساهمة معنا في بناء مساجد في المناطق التي يضطر فيها</p>
+            </div>
         </div>
+        <img class="post-img" src="<?= $project['post_photo'] ?>" alt="">
+
     </div>
-    <footer class="section">
+    <div class="projects-national section">
+        <div class="container">
+            <div class="national-header">
+                <span class="national-main">الدول التي ندعمها</span>
+                <br>
+                اكثر من
+                <span class="national-alternative">25</span> دولة
+            </div>
+            <div class="national-body">
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+                <div class="national-card">
+                    <span class="national-name">سوريا</span>
+                    <img class="national-flag" src="assets/flags/24x24/sy.png"></img>
+                </div>
+            </div>
+        </div>
+    <?php }  ?>
+    </div>
+    <footer>
         <div class="container">
             <?php include($config['COMPONENT_PATH'] . DS . 'FooterComponent.php') ?>
         </div>
     </footer>
-    <?php include($config['COMPONENT_PATH'] . DS . 'ModalComponent.php') ?>
+    <?php include($config['COMPONENT_PATH'] . DS . 'Modals/ModalComponent.php') ?>
     <script src="assets/lib/splide.min.js"></script>
     <script src="assets/script/main.js"></script>
 

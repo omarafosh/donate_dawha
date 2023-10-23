@@ -19,13 +19,15 @@
     </nav>
 
     <div class="section">
+        <a href="/projects?type='مساجد'">مساجد</a>
+        <a href="/projects?type='تعليم'">تعليم</a>
         <div class="container">
-            <?php include($config['COMPONENT_PATH'] . DS . 'SliderProjectComponent.php') ?>
+            <?php include($config['COMPONENT_PATH'] . DS . 'Sliders' . DS . 'SliderProjectComponent.php') ?>
         </div>
     </div>
     <div class="section">
         <div class="container">
-            <?php include($config['COMPONENT_PATH'] . DS . 'SliderCampaignsComponent.php') ?>
+            <?php include($config['COMPONENT_PATH'] . DS . 'Sliders' . DS . 'SliderCampaignsComponent.php') ?>
         </div>
     </div>
     <footer class="section">
@@ -33,7 +35,7 @@
             <?php include($config['COMPONENT_PATH'] . DS . 'FooterComponent.php') ?>
         </div>
     </footer>
-    <?php include($config['COMPONENT_PATH'] . DS . 'ModalComponent.php') ?>
+    <?php include($config['COMPONENT_PATH'] . DS . 'Modals' . DS . 'ModalComponent.php') ?>
     <script src="assets/lib/splide.min.js"></script>
     <script src="assets/script/main.js"></script>
 

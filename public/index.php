@@ -1,6 +1,7 @@
 <?php
 defined('ROOT_PATH') || define('ROOT_PATH', realpath(dirname(__FILE__) . '/..'));
 defined('APP_PATH') || define('APP_PATH', realpath(dirname(__FILE__) . '/../app'));
+defined('ASSETS_PATH') || define('ASSETS_PATH', realpath(dirname(__FILE__) . '/../public/assets'));
 
 const DS = DIRECTORY_SEPARATOR;
 
