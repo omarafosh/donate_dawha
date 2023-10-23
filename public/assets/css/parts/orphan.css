@@ -1,3 +1,4 @@
+
 .orphans .container{
     position: relative;
 }
@@ -21,3 +22,87 @@
     font-weight: bold;
     text-align: center;
 }
+
+
+/* start form */
+.orphans-search{
+    margin-top: 30px;
+}
+.orphans-form-search {
+    background-color:var(--card-color);
+    padding: 0px 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.orphans-search-row1 select:nth-child(2) {
+    background-color: #2a5e84;
+    color: #c0e2fb;
+    border: 0;
+}
+
+
+
+.orphans-search-row1 {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 30px;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .orphans-search-row1 {
+        row-gap: 3px;
+    }
+
+}
+
+.orphans-search-row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px;
+    flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 768px) {
+    .orphans-search-row2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.orphans-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    width: 100%;
+    flex: 8;
+}
+
+.sponsorship-search .content .search-row2 button {
+    height: 40px;
+    width: 132px;
+    border-radius: 13px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2a5e84;
+    border: 0;
+
+}
+
+@media screen and (max-width: 768px) {
+    .sponsorship-search .content .search-row2 button {
+        width: 100%;
+    }
+}
+/* end form */
