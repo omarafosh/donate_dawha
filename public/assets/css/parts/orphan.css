@@ -8,4 +8,16 @@
     top: 60px;
     margin-left: 16px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+.orphans-row{
+    display: flex;
+    column-gap: 5px;
+}
+.orphans-header{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }

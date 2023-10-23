@@ -23,21 +23,30 @@
         <div class="container">
 
             <form class="card orphans-form">
-                <div class="orphans-headet">كفالة يتيم</div>
-                <input type="text">
-                <div class="orphan-row">
-                    <input type="text">
-                    <select name="" id="">
+                <div class="orphans-header">كفالة يتيم</div>
+                <input type="text" class="input-text">
+                <div class="orphans-row">
+                    <input type="text" class="input-text">
+                    <select name="" id="" class="input-text">
                         <option value=""></option>
                     </select>
                 </div>
-                <button>اكفلني</button>
+                <button class="form-button">اكفلني</button>
             </form>
         </div>
 
         <img class="orphans-logo" src="" alt="">
     </div>
+    <div class="sponsorship-search">
+        <div class="container">
+            <div class="list-cards">
+                <?php include($config['COMPONENT_PATH'] . 'Cards' . DS . 'CardOrphanComponent.php') ?>
+                <?php include($config['COMPONENT_PATH'] . 'Cards' . DS . 'CardOrphanComponent.php') ?>
+                <?php include($config['COMPONENT_PATH'] . 'Cards' . DS . 'CardOrphanComponent.php') ?>
+            </div>
+        </div>
 
+    </div>
     <footer class="section">
         <div class="container">
             <?php include($config['COMPONENT_PATH'] . DS . 'FooterComponent.php') ?>
