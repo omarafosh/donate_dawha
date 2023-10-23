@@ -1,0 +1,58 @@
+.splide__slide{
+  padding: 4rem 0px;
+  display: flex;
+  justify-content: center;
+  }
+  .splide__slide__container{
+    width: 600px;
+    text-align: center;
+  }
+  .slide__content{
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  }
+
+  .slide-img__wrapper{
+    display: flex;
+    align-items: center;
+
+  }
+
+  .slider-card-projects{
+    background-color: #fff;
+    width: 350px;
+    height: 350px;
+    position: relative;
+  }
+  .slider-card-projects-image{
+    width: 94%;
+    height: 190px;
+    margin: 10px 10px;
+    object-fit: cover;
+  }
+  .slider-projects-name{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    padding: 6px 0px;
+  }
+  .slider-projects-description{
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    margin: 0px auto;
+    font-size: 12px;
+  }
+.form-projects-button{
+  background-color: var(--buttons);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  top: 94%;
+  left: 19%;
+  width: 180px;
+  height: 48px;
+}

@@ -1,0 +1,73 @@
+.splide__slide{
+  padding: 4rem 0px;
+  display: flex;
+  justify-content: center;
+  }
+  .splide__slide__container{
+    width: 600px;
+    text-align: center;
+  }
+  .slide__content{
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  }
+
+  .slide-img__wrapper{
+    display: flex;
+    align-items: center;
+
+  }
+
+  .slider-card-campaigns{
+    background-color: #fff;
+    width: 350px;
+    height: 350px;
+    position: relative;
+  }
+  .slider-campaigns-card-image{
+    width: 91%;
+    height: 80%;
+    margin: 10px 15px;
+    object-fit: cover;
+  }
+  .slider-campaigns-name{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    padding: 6px 0px;
+  }
+  .slider-campaigns-description{
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    margin: 0px auto;
+    font-size: 12px;
+  }
+.form-campaigns-button{
+  background-color: var(--buttons);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  top: 94%;
+  left: 19%;
+  width: 180px;
+  height: 48px;
+}
+
+.slider-campaigns-overlay{
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  height: 81%;
+  width: 92%;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+.slider-campaigns-card-content{
+  position: absolute;
+    top: 0;
+    color: #fff;
+    margin-top: 16px;
+}
