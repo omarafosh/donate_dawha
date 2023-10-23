@@ -1,13 +1,11 @@
-<form action="chrity-form">
-    <div class="chrity-search-row1">
-        <select class="input-txet" name="" id="">
+<form class="chrity-form">
+        <select class="input-text w-15" name="" id="">
             <option value="">اختر نوع المساعدة</option>
         </select>
-        <select class="input-txet" name="" id="">
+        <select class="input-text w-15" name="" id="">
             <option value="">الدول</option>
         </select>
-        <input class="input-txet" name="from" class="to" type="text" placeholder="من">
-        <input class="input-txet" name="from" class="to" type="text" placeholder="الى">
-        <button class="form-button-second">بحث</button>
-    </div>
+        <input class="input-text w-15" name="from" class="to" type="text" placeholder="من">
+        <input class="input-text w-15" name="from" class="to" type="text" placeholder="الى">
+        <button class="chrity-button w-15">بحث</button>
 </form>

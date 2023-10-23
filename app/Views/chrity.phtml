@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +9,21 @@
     <link rel="stylesheet" href="assets/lib/splide.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
-
-
     <nav>
         <?php include($config['COMPONENT_PATH'] . DS . 'NavbarComponent.php') ?>
     </nav>
-   <div class="chrity-search">
-   <?php include($config['COMPONENT_PATH'] . 'Forms' . DS . 'FormChrityComponent.php') ?>
-   </div>
-
+    <div class="chrity-search">
+        <div class="container">
+            <?php include($config['COMPONENT_PATH'] . 'Forms' . DS . 'FormChrityComponent.php') ?>
+        </div>
+    </div>
     <div class="chrity-cards">
         <div class="container">
-            <div class="list-cards">
-            <?php include($config['COMPONENT_PATH'] . 'Cards' . DS . 'CardChrityComponent.php') ?>
+            <div class="chrity-list-cards">
+                <?php include($config['COMPONENT_PATH'] . 'Cards' . DS . 'CardChrityComponent.php') ?>
+                <?php include($config['COMPONENT_PATH'] . 'Cards' . DS . 'CardChrityComponent.php') ?>
+                <?php include($config['COMPONENT_PATH'] . 'Cards' . DS . 'CardChrityComponent.php') ?>
             </div>
         </div>
     </div>
@@ -37,5 +36,4 @@
     <script src="assets/lib/splide.min.js"></script>
     <script src="assets/script/main.js"></script>
 </body>
-
 </html>

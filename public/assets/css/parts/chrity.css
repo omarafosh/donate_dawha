@@ -1,0 +1,162 @@
+/* Chrity Form  */
+.chrity-search .container {
+    height: 92px;
+    background-color: #2a5e84;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.chrity-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 35px;
+}
+@media screen and (max-width: 768px) {
+    .chrity-form {
+        row-gap: 3px;
+    }
+}
+.charity-img{
+    border-radius:  16px 16px 0 0;
+}
+
+.chrity-button{
+    background-color: #ddd;
+    border-radius: 10px;
+}
+/* Chrity Card */
+.chrity-list-cards {
+    height: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .chrity-list-cards {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px auto;
+        row-gap: 10px;
+    }
+}
+
+.chrity-card {
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 12px;
+    width: 325px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.charity-content {
+    position: relative;
+}
+
+
+.chrity-licence {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 30%;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 0px 7px;
+    color: #fff;
+    font-size: 10px;
+}
+
+
+
+
+
+.chrity-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5px;
+    width: 100%;
+
+    padding: 2px 10px;
+}
+
+.chrity-cost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 10px;
+}
+
+.chrity-level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5px;
+    width: 100%;
+
+    padding: 10px 10px;
+}
+
+.chrity-prograss-bar {
+    width: 80%;
+    margin: 5px 10px;
+}
+
+.chrity-bar {
+    height: 12px;
+    width: 20%;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, orange, transparent);
+}
+
+
+.chrity-nationl {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 5px;
+    padding: 12px 7px;
+}
+
+
+
+.chrity-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 23px;
+    padding: 12px 0px;
+}
+
+.chrity-mony {
+    width: 130px;
+    background-color: #f7f9fa;
+}
+
+
+
+ .form-button-second {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+.chrity-personal{
+    background-color: #fff;
+}
+.chrity-button{
+    padding: 10px 60px;
+    background-color: #e00570;
+    margin: 17px 0px;
+    border: 0px;
+    color: #fff;
+    border-radius: 7px;
+}
